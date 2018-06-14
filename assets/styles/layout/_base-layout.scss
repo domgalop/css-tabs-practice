@@ -1,0 +1,61 @@
+//
+// Base Layout 
+//
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: $bg-color;
+    color: $font-color; 
+    font-size: $font-size;
+    font-family: $font-family-1;
+    line-height: $line-height;
+}
+
+main {
+    @extend %flex;
+    border-radius: 1.25em;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin: 0 auto;
+    max-width: 60em;
+    transform: translate(0, 30%);
+}
+
+label {
+    font-family: $font-family-2;
+    background: $tab-bg-color;
+    color: $font-color;
+    cursor: pointer;
+    order: 1; 
+    padding: 1em 1.4em;
+    text-align: center;
+    width: 20%;
+
+    &:first-of-type {
+        border-bottom-left-radius: 1em;  
+    }
+
+    &:last-of-type {
+        border-bottom-right-radius: 1em; 
+    }
+}
+
+//
+//   tab func
+//
+
+input[type=radio], .container__tab {
+    display: none; 
+}
+
+input[type=radio]:checked + label {
+    background: $highlight-color; 
+    color: white;
+}
+
+input[type=radio]:checked + label + .container__tab{
+    display: flex; 
+}

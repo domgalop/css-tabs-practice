@@ -1,0 +1,160 @@
+//
+// Tabs Container
+//
+
+.container__tab {
+    background-color: #fff;
+    border-bottom: .5em solid $light-grey;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    height: 42vh;
+    width: 100%;
+}
+
+.container__left {
+    border-right: .01em solid $light-grey;
+    margin: 1.4em 0;
+    padding: 0 1.4em;
+    width: 34%;
+}
+
+.container__right {
+    padding: 0 1.2em;
+    margin: 1.4em 0;
+    width: 66%;
+}
+
+
+//
+// Container Photo
+//
+
+.container__info {
+    @extend %flex;
+    justify-content: center;
+    &__photo {
+        height: 60%;
+        img {
+            border-radius: 50%;
+            border: .36em solid $light-grey;
+            display: block;
+            height: 11.5em;    
+            margin: 0 auto;
+            object-fit: cover;
+            width: 11.5em;
+        }
+    }
+
+    &__text {
+        height: 40%;
+        text-align: center;
+
+        p {
+            color: $highlight-color;
+            margin-bottom: .25em; 
+            margin: .5em;
+        }
+
+        h1{
+            margin-bottom: 0.5em;
+        }
+    }
+}
+
+//
+// social 
+//
+
+.social {
+    @extend %flex;
+    color: #fff;
+    font-size: 1.2em;
+    justify-content: flex-end;
+    padding: 0 .4em;
+
+    &__container {
+        border-bottom-color: rgba(0, 0 ,0 , .09);
+        border-bottom-style: solid;
+        border-bottom-width: 0.2em;
+        padding: .2em;
+        text-align: center;
+        width: 8%;
+
+        &:first-of-type {
+            border-bottom-left-radius: .4em;  
+            border-top-left-radius: .4em;
+        }
+
+        &:last-of-type {
+            border-bottom-right-radius: .4em; 
+            border-top-right-radius: .4em;
+        } 
+
+        &:hover {
+            transition: all 0.5s ease-in-out;
+            border-bottom-color: rgba(0, 0 ,0 , .2);
+        }
+
+        &--fb {
+            background-color: $fb-color;
+        }
+
+        &--gp {
+            background-color: $gplus-color;
+        }
+
+        &--tw {
+            background-color: $twitter-color;
+        }
+
+        &--lin {
+            background-color: $lin-color;
+        }
+
+        &--sk {
+            background-color: $skype-color;
+        }
+    }
+}
+
+//
+// About me  
+//
+
+.about__me {
+    & h3 {
+        color: #aaacaf;
+    }
+}
+
+//
+// Tab 2  
+//
+
+.container__tab {
+    &__skils > p:after {
+        background-color: $light-grey;
+        box-shadow: -0.075em 0.075em 0.075em #aaacaf;
+        content: " ";
+        display: block;
+        height: 1em;
+        width: 78%;
+    }
+
+    &__job{
+        h3, h2, p {
+            margin: 0;
+        }
+
+        div{
+            margin-bottom: .4em;
+        } 
+
+         &--text {
+            height: 32%;
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+        }
+    }
+}

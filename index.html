@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css Tabs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Nunito|Poppinss">
+    <link rel="stylesheet"  href="css/normalize.css">
+    <link rel="stylesheet"  href="css/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="./js/app.js"></script>
+</head>
+<body>
+    <main>
+        <!-- Photo by Artem Beliaikin from Pexels https://www.pexels.com/photo/adult-short-coated-tri-color-dog-879788/ -->
+        <!-- Input -->
+        <input id="tab-1" type="radio" name="tab-name"/>
+        <label for="tab-1"><i class="fas fa-user"></i>
+            <span>About</span>
+        </label>
+        <!-- Info -->
+        <div class="container__tab">
+            <div class="container__info container__left">
+                <picture class="container__info__photo">
+                    <source media="(max-width: 420px)" srcset="./images/dog-small.jpeg">
+                    <source media="(max-width: 760px)" srcset="./images/dog-medium.jpeg">
+                    <img src="./images/dog-medium.jpeg" alt="dog">
+                </picture>
+                <div class="container__info__text">
+                    <h1>Dominik Ortiz</h1>
+                    <p>Front-End Developer</p>
+                    <p>Bogota, Co.</p>
+                </div>
+            </div>
+            <div class="container__right">
+                <div class="social">
+                    <div class="social__container social__container--fb">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="social__container social__container--gp">
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    <div class="social__container social__container--tw">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="social__container social__container--lin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="social__container social__container--sk">
+                        <i class="fab fa-skype"></i>
+                    </div>
+                </div>
+                <div class="about__me">
+                    <h2>Hello my name is Dominik Ortiz</h2>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vero minima, odit inventore voluptatibus atque officia rem, nostrum quam perferendis quis ratione. Ducimus architecto, cumque repellendus ipsum esse ex magni!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste vitae, sed tenetur assumenda aliquam labore consectetur, laboriosam, minus illo at, nobis delectus voluptas beatae deleniti! Fuga reprehenderit officiis provident quaerat.</p>
+                </div> 
+            </div>
+        </div>
+
+        <!-- Input -->
+        <input id="tab-2" type="radio" name="tab-name" checked="checked"/>
+        <label for="tab-2"><i class="fas fa-address-card"></i>
+            <span>Resume</span>
+        </label>
+        <!-- Info -->
+        <div class="container__tab">
+            <div class="container__tab__skils container__left">
+                <h2>// Skils &#38; Expertise</h2>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>PHP</p>
+                <p>SQL</p>
+            </div>
+            <div class="container__tab__job container__right">
+                <h2>// Work Experience</h2>
+                <div class="container__tab__job--text">
+                    <div>
+                        <h3>UI/UX Designer</h3>
+                        <p>2008-2013 /PSDchat</p>
+                    </div>
+                    <div>
+                        <h3>UI/UX Designer</h3>
+                        <p>2008-2013 /PSDchat</p>
+                    </div>
+                    <div>
+                        <h3>UI/UX Designer</h3>
+                        <p>2008-2013 /PSDchat</p>
+                    </div>
+                    <div>
+                        <h3>UI/UX Designer</h3>
+                        <p>2008-2013 /PSDchat</p>
+                    </div>
+                </div>
+                <h2>//Education &#38; Achievements</h2>
+                <div class="container__tab__job--text">
+                    <div>
+                        <h3>UI/UX Designer</h3>
+                        <p>2008-2013 /PSDchat</p>
+                    </div>
+                    <div>
+                        <h3>UI/UX Designer</h3>
+                        <p>2008-2013 /PSDchat</p>
+                    </div>
+                    <div>
+                        <h3>UI/UX Designer</h3>
+                        <p>2008-2013 /PSDchat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Input -->
+        <input id="tab-3" type="radio" name="tab-name"/>
+        <label for="tab-3"><i class="fas fa-book"></i>
+            <span>Recommendation</span>
+        </label>
+        <!-- Info -->
+        <div class="container__tab">
+        </div>
+        <!-- Input -->
+        <input id="tab-4" type="radio" name="tab-name"/>
+        <label for="tab-4"><i class="fas fa-archive"></i>
+            <span>Portfolio</span>
+        </label>
+        <!-- Info -->
+        <div class="container__tab">
+        </div>
+        <!-- Input -->
+        <input id="tab-5" type="radio" name="tab-name"/>
+        <label for="tab-5"><i class="far fa-comments"></i>
+            <span>Contact</span>
+        </label>
+        <!-- Info -->
+        <div class="container__tab">
+        </div>
+    </main>
+</body>
+</html>
